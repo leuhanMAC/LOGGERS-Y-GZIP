@@ -1,11 +1,17 @@
 import { Router } from "express";
-import { logger } from "../utils/initData";
+import { logger, productFiles } from "../utils/initData.js";
 
 export const productRouter = Router();
 
 productRouter.get("/", async (req, res) => {
-    const products = await productFiles.getAll();
-    logger.info('GET PRODUCTOS/');
+    logger.info('GET /productos');
+    let products;
+    try {
+        products = await productFiles.getAll();
+    } catch (error) {
+        logger.error(`Error to get products: ${error}`);
+    }
+
     res.render("productList", {
         products,
         emptyProducts: !Boolean(products.length)
@@ -15,14 +21,18 @@ productRouter.get("/", async (req, res) => {
 productRouter.post(
     "/",
     async (req, res) => {
+        logger.info('POST /productos');
         const { title, price, thumbnail } = req.body;
-        logger.info('POST PRODUCTOS/');
+        try {
+            await productFiles.save({
+                title,
+                price,
+                thumbnail,
+            });
+        } catch (error) {
+            logger.error(`Error to save product: ${error}`);
+        }
 
-        await productFiles.save({
-            title,
-            price,
-            thumbnail,
-        });
         res.redirect("/");
     }
 );

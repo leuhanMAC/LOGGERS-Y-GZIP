@@ -1,0 +1,751 @@
+Statistical profiling result from .\isolate-000001F9E0ABE580-20512-v8.log, (20519 ticks, 24 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+  15856   77.3%          C:\WINDOWS\SYSTEM32\ntdll.dll
+   3807   18.6%          D:\Programs\nodejs\node.exe
+     17    0.1%          C:\WINDOWS\system32\mswsock.dll
+     15    0.1%          C:\WINDOWS\System32\KERNELBASE.dll
+      5    0.0%          C:\WINDOWS\System32\KERNEL32.DLL
+      2    0.0%          C:\WINDOWS\System32\WS2_32.dll
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     52    0.3%    6.4%  LazyCompile: *parse D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:269:30
+     31    0.2%    3.8%  LazyCompile: *wrap D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\code-gen.js:101:22
+     28    0.1%    3.4%  LazyCompile: *resolve node:path:158:10
+     21    0.1%    2.6%  LazyCompile: *next D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:478:32
+     17    0.1%    2.1%  LazyCompile: *serializeInto D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\bson\lib\parser\serializer.js:553:23
+     15    0.1%    1.8%  LazyCompile: *SourceNode_walk D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\source-map\lib\source-node.js:221:53
+     11    0.1%    1.3%  LazyCompile: *nextTick node:internal/process/task_queues:104:18
+     11    0.1%    1.3%  LazyCompile: *next D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\index.js:177:16
+     11    0.1%    1.3%  LazyCompile: *compile D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      8    0.0%    1.0%  RegExp: ^(?:[^\x00]*?(?=(\{\{)))
+      8    0.0%    1.0%  RegExp: (?:\r\n?|\n).*
+      8    0.0%    1.0%  LazyCompile: *fulfilled D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-handlebars\dist\express-handlebars.js:21:27
+      8    0.0%    1.0%  LazyCompile: *_write node:internal/streams/writable:283:16
+      8    0.0%    1.0%  LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-handlebars\dist\express-handlebars.js:167:47
+      7    0.0%    0.9%  LazyCompile: *template D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\runtime.js:52:18
+      7    0.0%    0.9%  LazyCompile: *step D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-handlebars\dist\express-handlebars.js:31:18
+      7    0.0%    0.9%  LazyCompile: *onwrite node:internal/streams/writable:425:17
+      7    0.0%    0.9%  LazyCompile: *normalize node:path:304:12
+      7    0.0%    0.9%  LazyCompile: *generateList D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\code-gen.js:143:38
+      7    0.0%    0.9%  LazyCompile: *deserializeObject D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\bson\lib\parser\deserializer.js:65:27
+      7    0.0%    0.9%  LazyCompile: *anonymous D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:12:42
+      7    0.0%    0.9%  LazyCompile: *acquire D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\sessions.js:597:12
+      7    0.0%    0.9%  LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-handlebars\dist\express-handlebars.js:227:47
+      6    0.0%    0.7%  RegExp: [ \t]+$
+      6    0.0%    0.7%  LazyCompile: *processWaitQueue D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\sdam\topology.js:535:26
+      6    0.0%    0.7%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      6    0.0%    0.7%  LazyCompile: *endSession D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\sessions.js:129:15
+      6    0.0%    0.7%  LazyCompile: *command D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\connection.js:251:12
+      5    0.0%    0.6%  RegExp: (^|\r?\n)\s*?$
+      5    0.0%    0.6%  RegExp: ([ \t]+$)
+      5    0.0%    0.6%  LazyCompile: *getEncodingOps node:buffer:679:24
+      5    0.0%    0.6%  LazyCompile: *get node:internal/streams/duplex:94:8
+      5    0.0%    0.6%  LazyCompile: *castChunk D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\code-gen.js:52:19
+      5    0.0%    0.6%  LazyCompile: *WhitespaceControl.Program D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\whitespace-control.js:19:48
+      5    0.0%    0.6%  LazyCompile: *SubExpression D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:236:40
+      4    0.0%    0.5%  LazyCompile: *write_ node:_http_outgoing:730:16
+      4    0.0%    0.5%  LazyCompile: *size D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\denque\index.js:96:38
+      4    0.0%    0.5%  LazyCompile: *setupHelper D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:1020:36
+      4    0.0%    0.5%  LazyCompile: *processWaitQueue D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\connection_pool.js:406:21
+      4    0.0%    0.5%  LazyCompile: *invokeAmbiguous D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:699:44
+      4    0.0%    0.5%  LazyCompile: *hasTimedOut D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\sessions.js:552:16
+      4    0.0%    0.5%  LazyCompile: *get node:_http_incoming:108:16
+      4    0.0%    0.5%  LazyCompile: *formatValue node:internal/util/inspect:745:21
+      4    0.0%    0.5%  LazyCompile: *WhitespaceControl.BlockStatement.WhitespaceControl.DecoratorBlock.WhitespaceControl.PartialBlockStatement D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\whitespace-control.js:75:152
+      4    0.0%    0.5%  LazyCompile: *Socket._writeGeneric node:net:791:42
+      4    0.0%    0.5%  LazyCompile: *Program D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:113:28
+      4    0.0%    0.5%  LazyCompile: *Msg D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\commands.js:317:16
+      3    0.0%    0.4%  RegExp: ^(?:\{\{(~)?&)
+      3    0.0%    0.4%  LazyCompile: *slowCases node:internal/util:165:19
+      3    0.0%    0.4%  LazyCompile: *shift D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\denque\index.js:122:40
+      3    0.0%    0.4%  LazyCompile: *serializeObject D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\bson\lib\parser\serializer.js:260:25
+      3    0.0%    0.4%  LazyCompile: *serializeBinary D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\bson\lib\parser\serializer.js:462:25
+      3    0.0%    0.4%  LazyCompile: *serialize D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\bson\lib\bson.js:110:19
+      3    0.0%    0.4%  LazyCompile: *ret D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\runtime.js:188:15
+      3    0.0%    0.4%  LazyCompile: *resOnFinish node:_http_server:793:21
+      3    0.0%    0.4%  LazyCompile: *replaceStack D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:892:38
+      3    0.0%    0.4%  LazyCompile: *relative node:path:496:11
+      3    0.0%    0.4%  LazyCompile: *ondata node:internal/streams/readable:752:18
+      3    0.0%    0.4%  LazyCompile: *onMessage D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\connection.js:156:14
+      3    0.0%    0.4%  LazyCompile: *mergeSource D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:267:36
+      3    0.0%    0.4%  LazyCompile: *invokePartial D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:725:40
+      3    0.0%    0.4%  LazyCompile: *end node:_http_outgoing:833:45
+      3    0.0%    0.4%  LazyCompile: *emit node:events:475:44
+      3    0.0%    0.4%  LazyCompile: *compile D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:63:28
+      3    0.0%    0.4%  LazyCompile: *clearBuffer node:internal/streams/writable:529:21
+      3    0.0%    0.4%  LazyCompile: *appendContent D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:375:40
+      3    0.0%    0.4%  LazyCompile: *SourceNode_add D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\source-map\lib\source-node.js:172:51
+      3    0.0%    0.4%  LazyCompile: *PathExpression D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:289:42
+      3    0.0%    0.4%  LazyCompile: *Glob._process D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\glob\glob.js:295:36
+      3    0.0%    0.4%  LazyCompile: *Glob D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\glob\glob.js:117:15
+      3    0.0%    0.4%  LazyCompile: *<anonymous> file:///D:/Courses/Backend%20Coderhouse/Clase%2030%20-%20PROXY%20_%20NGINX/Servidor-con-balance-de-carga/routes/mainRouter.js:47:25
+      3    0.0%    0.4%  LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\source-map\lib\source-node.js:174:29
+      3    0.0%    0.4%  LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\sdam\topology.js:479:26
+      3    0.0%    0.4%  LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-handlebars\dist\express-handlebars.js:251:47
+      3    0.0%    0.4%  LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\connect-mongo\build\main\lib\MongoStore.js:236:10
+      3    0.0%    0.4%  LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\connect-mongo\build\main\lib\MongoStore.js:203:10
+      2    0.0%    0.2%  RegExp: ^\s*([^;\s]*)(?:;|\s|$)
+      2    0.0%    0.2%  RegExp: ^[\^_`a-zA-Z\-0-9!#$%&'*+.|~]+$
+      2    0.0%    0.2%  RegExp: ^[ \t]*\r?\n?
+      2    0.0%    0.2%  RegExp: ^(?:\}(~)?\}\})
+      2    0.0%    0.2%  RegExp: ^(?:([^\s!"#%-,\.\/;->@\[-\^`\{-~]+(?=([=~}\s\/.)|]))))
+      2    0.0%    0.2%  RegExp: ^(?:"(\\["]|[^"])*")
+      2    0.0%    0.2%  RegExp: \r?\n\s*?$
+      2    0.0%    0.2%  LazyCompile: *writevGeneric node:internal/stream_base_commons:122:23
+      2    0.0%    0.2%  LazyCompile: *writeU_Int32LE node:internal/buffer:690:24
+      2    0.0%    0.2%  LazyCompile: *write D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\pino\lib\multistream.js:46:18
+      2    0.0%    0.2%  LazyCompile: *write D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\connection.js:403:15
+      2    0.0%    0.2%  LazyCompile: *trim_prefix D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\index.js:293:23
+      2    0.0%    0.2%  LazyCompile: *stripFlags D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\helpers.js:52:20
+      2    0.0%    0.2%  LazyCompile: *setopts D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\glob\common.js:48:18
+      2    0.0%    0.2%  LazyCompile: *send D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\response.js:111:25
+      2    0.0%    0.2%  LazyCompile: *resolvePath D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:492:36
+      2    0.0%    0.2%  LazyCompile: *removeListener node:events:689:28
+      2    0.0%    0.2%  LazyCompile: *readableAddChunk node:internal/streams/readable:236:26
+      2    0.0%    0.2%  LazyCompile: *readFileAfterClose node:internal/fs/read_file_context:46:28
+      2    0.0%    0.2%  LazyCompile: *readFile D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\graceful-fs\graceful-fs.js:111:21
+      2    0.0%    0.2%  LazyCompile: *quotedString D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\code-gen.js:118:38
+      2    0.0%    0.2%  LazyCompile: *prepareProgram D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\helpers.js:185:24
+      2    0.0%    0.2%  LazyCompile: *parserOnHeadersComplete node:_http_common:77:33
+      2    0.0%    0.2%  LazyCompile: *parseWithoutProcessing D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\base.js:33:32
+      2    0.0%    0.2%  LazyCompile: *onceWrapper node:events:636:21
+      2    0.0%    0.2%  LazyCompile: *onStreamRead node:internal/stream_base_commons:167:22
+      2    0.0%    0.2%  LazyCompile: *lookupOnContext D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:448:44
+      2    0.0%    0.2%  LazyCompile: *listenerCount node:events:854:23
+      2    0.0%    0.2%  LazyCompile: *invokePartialWrapper D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\runtime.js:70:32
+      2    0.0%    0.2%  LazyCompile: *invokePartial D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\runtime.js:298:23
+      2    0.0%    0.2%  LazyCompile: *invokeKnownHelper D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:682:48
+      2    0.0%    0.2%  LazyCompile: *handle D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\index.js:136:31
+      2    0.0%    0.2%  LazyCompile: *getStatsFromBinding node:internal/fs/utils:531:29
+      2    0.0%    0.2%  LazyCompile: *get closed D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\connection_pool.js:101:15
+      2    0.0%    0.2%  LazyCompile: *functionCall D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\code-gen.js:113:38
+      2    0.0%    0.2%  LazyCompile: *from node:buffer:296:28
+      2    0.0%    0.2%  LazyCompile: *format D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\content-type\index.js:65:17
+      2    0.0%    0.2%  LazyCompile: *extname node:path:836:10
+      2    0.0%    0.2%  LazyCompile: *executeWithServerSelection D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\operations\execute_operation.js:85:36
+      2    0.0%    0.2%  LazyCompile: *concat node:buffer:536:32
+      2    0.0%    0.2%  LazyCompile: *checkIn D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\connection_pool.js:175:12
+      2    0.0%    0.2%  LazyCompile: *appendToBuffer D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:42:42
+      2    0.0%    0.2%  LazyCompile: *append node:internal/linkedlist:30:16
+      2    0.0%    0.2%  LazyCompile: *append D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:394:26
+      2    0.0%    0.2%  LazyCompile: *afterWriteTick node:internal/streams/writable:482:24
+      2    0.0%    0.2%  LazyCompile: *_unrefTimer node:net:431:52
+      2    0.0%    0.2%  LazyCompile: *__generator D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-handlebars\dist\express-handlebars.js:27:58
+      2    0.0%    0.2%  LazyCompile: *Timeout node:internal/timers:167:17
+      2    0.0%    0.2%  LazyCompile: *SourceNode_toString D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\source-map\lib\source-node.js:318:61
+      2    0.0%    0.2%  LazyCompile: *SourceNode_prepend D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\source-map\lib\source-node.js:197:59
+      2    0.0%    0.2%  LazyCompile: *SonicBoom.release D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\sonic-boom\index.js:127:18
+      2    0.0%    0.2%  LazyCompile: *Socket.read node:net:661:33
+      2    0.0%    0.2%  LazyCompile: *PartialStatement D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:175:46
+      2    0.0%    0.2%  LazyCompile: *Glob._processGlobStar D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\glob\glob.js:623:44
+      2    0.0%    0.2%  LazyCompile: *ClientSession D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\sessions.js:45:16
+      2    0.0%    0.2%  LazyCompile: *<anonymous> node:internal/fs/utils:687:40
+      2    0.0%    0.2%  LazyCompile: *<anonymous> node:buffer:349:36
+      2    0.0%    0.2%  LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\operations\execute_operation.js:16:48
+      2    0.0%    0.2%  LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\operations\connect.js:53:28
+      2    0.0%    0.2%  LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\connection.js:60:44
+      2    0.0%    0.2%  Function: ^<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\source-map\lib\source-node.js:174:29
+      1    0.0%    0.1%  RegExp: ^\s*?\r?\n
+      1    0.0%    0.1%  RegExp: ^\s*?(\r?\n|$)
+      1    0.0%    0.1%  RegExp: ^\[.*\]$
+      1    0.0%    0.1%  RegExp: ^\/socket\.io/socket\.io(\.msgpack|\.esm)?(\.min)?\.js(\.map)?(?:\?|$)
+      1    0.0%    0.1%  RegExp: ^[!#$%&'*+.^_`|~0-9A-Za-z-]+\/[!#$%&'*+.^_`|~0-9A-Za-z-]+$
+      1    0.0%    0.1%  RegExp: ^[!#$%&'*+.^_`|~0-9A-Za-z-]+$
+      1    0.0%    0.1%  RegExp: ^(?:\}\}\}\})
+      1    0.0%    0.1%  RegExp: ^(?:\{\{(~)?\s*else\s*(~)?\}\})
+      1    0.0%    0.1%  RegExp: ^(?:\{\{(~)?\^\s*(~)?\}\})
+      1    0.0%    0.1%  RegExp: ^(?:\{\{(~)?\^)
+      1    0.0%    0.1%  RegExp: ^(?:\{\{(~)?\*?)
+      1    0.0%    0.1%  RegExp: ^(?:\{\{(~)?>)
+      1    0.0%    0.1%  RegExp: ^(?:\{\{(~)?#>)
+      1    0.0%    0.1%  RegExp: ^(?:\{\{(~)?![\s\S]*?\}\})
+      1    0.0%    0.1%  RegExp: ^(?:\s+)
+      1    0.0%    0.1%  RegExp: ^(?:\.(?=([=~}\s\/.)|])))
+      1    0.0%    0.1%  RegExp: ^(?:[^\x00]+)
+      1    0.0%    0.1%  RegExp: ^(?:(~)?\}\})
+      1    0.0%    0.1%  RegExp: \/+
+      1    0.0%    0.1%  RegExp: [^\t\x20-\x7e\x80-\xff]
+      1    0.0%    0.1%  RegExp: [\x00-\x1f\x27\x5c\x7f-\x9f]|[\ud800-\udbff](?![\udc00-\udfff])|(?<![\ud800-\udbff])[\udc00-\udfff]
+      1    0.0%    0.1%  RegExp: [&<>"'`=]
+      1    0.0%    0.1%  RegExp: (\[[^[\]]*])
+      1    0.0%    0.1%  RegExp: (?:^|\/)\.?\.$
+      1    0.0%    0.1%  RegExp: "(?:_|\\u005[Ff])(?:_|\\u005[Ff])(?:p|\\u0070)(?:r|\\u0072)(?:o|\\u006[Ff])(?:t|\\u0074)(?:o|\\u006[Ff])(?:_|\\u005[Ff])(?:_|\\u005[Ff])"\s*:
+      1    0.0%    0.1%  LazyCompile: *yy.locInfo D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\base.js:42:25
+      1    0.0%    0.1%  LazyCompile: *writeHead node:_http_server:270:19
+      1    0.0%    0.1%  LazyCompile: *write node:buffer:593:12
+      1    0.0%    0.1%  LazyCompile: *write node:buffer:1051:40
+      1    0.0%    0.1%  LazyCompile: *unenroll node:timers:78:18
+      1    0.0%    0.1%  LazyCompile: *toNamespacedPath node:path:618:19
+      1    0.0%    0.1%  LazyCompile: *subarray node:buffer:1116:46
+      1    0.0%    0.1%  LazyCompile: *setupFullMustacheParams D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:445:60
+      1    0.0%    0.1%  LazyCompile: *setStreamTimeout node:internal/stream_base_commons:237:26
+      1    0.0%    0.1%  LazyCompile: *set maxAge D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-session\session\cookie.js:83:13
+      1    0.0%    0.1%  LazyCompile: *set D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\application.js:359:23
+      1    0.0%    0.1%  LazyCompile: *serializeNumber D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\bson\lib\parser\serializer.js:44:25
+      1    0.0%    0.1%  LazyCompile: *sendFile D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\send\index.js:712:51
+      1    0.0%    0.1%  LazyCompile: *selectServer D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\sdam\topology.js:254:17
+      1    0.0%    0.1%  LazyCompile: *save D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-session\index.js:403:20
+      1    0.0%    0.1%  LazyCompile: *resolvePossibleLambda D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:527:56
+      1    0.0%    0.1%  LazyCompile: *render D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\view.js:133:40
+      1    0.0%    0.1%  LazyCompile: *render D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\application.js:548:29
+      1    0.0%    0.1%  LazyCompile: *removeAt node:internal/priority_queue:93:11
+      1    0.0%    0.1%  LazyCompile: *remove node:internal/linkedlist:16:16
+      1    0.0%    0.1%  LazyCompile: *readableAddChunk D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\pino-pretty\node_modules\readable-stream\lib\internal\streams\readable.js:216:26
+      1    0.0%    0.1%  LazyCompile: *readFile node:fs:373:18
+      1    0.0%    0.1%  LazyCompile: *pushProgram D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:615:36
+      1    0.0%    0.1%  LazyCompile: *push D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:868:22
+      1    0.0%    0.1%  LazyCompile: *processPromiseRejections node:internal/process/promises:211:34
+      1    0.0%    0.1%  LazyCompile: *processIncomingData D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\message_stream.js:84:29
+      1    0.0%    0.1%  LazyCompile: *preparePath D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\helpers.js:63:21
+      1    0.0%    0.1%  LazyCompile: *prepareMustache D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\helpers.js:99:25
+      1    0.0%    0.1%  LazyCompile: *pipe D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\send\index.js:506:43
+      1    0.0%    0.1%  LazyCompile: *parserOnIncoming node:_http_server:857:26
+      1    0.0%    0.1%  LazyCompile: *parse D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\commands.js:426:10
+      1    0.0%    0.1%  LazyCompile: *parse D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\minimatch\minimatch.js:413:9
+      1    0.0%    0.1%  LazyCompile: *originalurl D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\parseurl\index.js:65:22
+      1    0.0%    0.1%  LazyCompile: *onwrite D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\pino-pretty\node_modules\readable-stream\lib\internal\streams\writable.js:373:17
+      1    0.0%    0.1%  LazyCompile: *ondata D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\pino-pretty\node_modules\readable-stream\lib\internal\streams\readable.js:697:18
+      1    0.0%    0.1%  LazyCompile: *onStatError D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\send\index.js:412:57
+      1    0.0%    0.1%  LazyCompile: *onParserExecuteCommon node:_http_server:696:31
+      1    0.0%    0.1%  LazyCompile: *onFinish node:_http_outgoing:828:18
+      1    0.0%    0.1%  LazyCompile: *omitRight D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\whitespace-control.js:188:19
+      1    0.0%    0.1%  LazyCompile: *now D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\utils.js:571:13
+      1    0.0%    0.1%  LazyCompile: *module.exports D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\utils-merge\index.js:16:36
+      1    0.0%    0.1%  LazyCompile: *maybeReadMore_ node:internal/streams/readable:609:24
+      1    0.0%    0.1%  LazyCompile: *join node:path:421:7
+      1    0.0%    0.1%  LazyCompile: *insert node:internal/priority_queue:34:9
+      1    0.0%    0.1%  LazyCompile: *initialize D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\passport\lib\middleware\initialize.js:51:29
+      1    0.0%    0.1%  LazyCompile: *inflight D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\inflight\inflight.js:7:19
+      1    0.0%    0.1%  LazyCompile: *incRefCount node:internal/timers:299:21
+      1    0.0%    0.1%  LazyCompile: *hash D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-session\index.js:596:14
+      1    0.0%    0.1%  LazyCompile: *handle D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\layer.js:86:49
+      1    0.0%    0.1%  LazyCompile: *handle D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\application.js:165:29
+      1    0.0%    0.1%  LazyCompile: *getEncodingPriority D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\negotiator\lib\encoding.js:98:29
+      1    0.0%    0.1%  LazyCompile: *getContext D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:427:34
+      1    0.0%    0.1%  LazyCompile: *get writeConcern D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\collection.js:127:21
+      1    0.0%    0.1%  LazyCompile: *get node:net:1753:6
+      1    0.0%    0.1%  LazyCompile: *get node:internal/bootstrap/pre_execution:382:8
+      1    0.0%    0.1%  LazyCompile: *get node:internal/bootstrap/pre_execution:370:8
+      1    0.0%    0.1%  LazyCompile: *fromOptions D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\write_concern.js:40:23
+      1    0.0%    0.1%  LazyCompile: *flow node:internal/streams/readable:1008:14
+      1    0.0%    0.1%  LazyCompile: *finish D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\glob\common.js:122:17
+      1    0.0%    0.1%  LazyCompile: *execute D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\operations\find.js:30:12
+      1    0.0%    0.1%  LazyCompile: *debug D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\debug\src\debug.js:65:17
+      1    0.0%    0.1%  LazyCompile: *createUnsafeBuffer node:internal/buffer:1059:28
+      1    0.0%    0.1%  LazyCompile: *createProtoAccessControl D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\internal\proto-access.js:19:34
+      1    0.0%    0.1%  LazyCompile: *copyObjectLooseModern D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\fast-copy\dist\cjs\index.cjs:212:31
+      1    0.0%    0.1%  LazyCompile: *compileProgram D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:87:42
+      1    0.0%    0.1%  LazyCompile: *command D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\sdam\server.js:152:12
+      1    0.0%    0.1%  LazyCompile: *cleanupCursor D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cursor\abstract_cursor.js:536:23
+      1    0.0%    0.1%  LazyCompile: *classifySexpr D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:363:40
+      1    0.0%    0.1%  LazyCompile: *checkListener node:events:258:23
+      1    0.0%    0.1%  LazyCompile: *braceExpand D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\minimatch\minimatch.js:109:21
+      1    0.0%    0.1%  LazyCompile: *basename node:path:749:11
+      1    0.0%    0.1%  LazyCompile: *asJson D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\pino\lib\tools.js:91:17
+      1    0.0%    0.1%  LazyCompile: *app.<computed> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\application.js:490:25
+      1    0.0%    0.1%  LazyCompile: *app D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\express.js:38:21
+      1    0.0%    0.1%  LazyCompile: *anonymous D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:549:49
+      1    0.0%    0.1%  LazyCompile: *accept D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\visitor.js:57:26
+      1    0.0%    0.1%  LazyCompile: *_flushOutput node:_http_outgoing:951:63
+      1    0.0%    0.1%  LazyCompile: *TimersList node:internal/timers:241:20
+      1    0.0%    0.1%  LazyCompile: *Socket._read node:net:618:34
+      1    0.0%    0.1%  LazyCompile: *Readable.on node:internal/streams/readable:874:33
+      1    0.0%    0.1%  LazyCompile: *MustacheStatement D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:215:48
+      1    0.0%    0.1%  LazyCompile: *Long.compare D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\bson\lib\long.js:291:39
+      1    0.0%    0.1%  LazyCompile: *Glob._finish D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\glob\glob.js:185:35
+      1    0.0%    0.1%  LazyCompile: *FastBuffer node:internal/buffer:958:14
+      1    0.0%    0.1%  LazyCompile: *ExpressHandlebars.render D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-handlebars\dist\express-handlebars.js:222:51
+      1    0.0%    0.1%  LazyCompile: *ExpressHandlebars._compileTemplate D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-handlebars\dist\express-handlebars.js:313:61
+      1    0.0%    0.1%  LazyCompile: *EventEmitter.init node:events:327:29
+      1    0.0%    0.1%  LazyCompile: *ContentStatement D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:228:46
+      1    0.0%    0.1%  LazyCompile: *BlockStatement D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:130:42
+      1    0.0%    0.1%  LazyCompile: *Binary D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\bson\lib\binary.js:42:20
+      1    0.0%    0.1%  LazyCompile: *BinMsg D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\commands.js:394:16
+      1    0.0%    0.1%  LazyCompile: *AbstractCursor D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cursor\abstract_cursor.js:51:16
+      1    0.0%    0.1%  LazyCompile: *<anonymous> node:internal/util:347:32
+      1    0.0%    0.1%  LazyCompile: *<anonymous> node:internal/fs/utils:681:42
+      1    0.0%    0.1%  LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\socket.io\dist\index.js:262:27
+      1    0.0%    0.1%  LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\sdam\server.js:42:35
+      1    0.0%    0.1%  LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\sdam\server.js:204:42
+      1    0.0%    0.1%  LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\operations\execute_operation.js:69:70
+      1    0.0%    0.1%  LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\mongo_client.js:252:31
+      1    0.0%    0.1%  LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cursor\abstract_cursor.js:428:42
+      1    0.0%    0.1%  LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cursor\abstract_cursor.js:188:52
+      1    0.0%    0.1%  LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:235:48
+      1    0.0%    0.1%  LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-session\index.js:598:43
+      1    0.0%    0.1%  LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-handlebars\dist\express-handlebars.js:98:47
+      1    0.0%    0.1%  LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-handlebars\dist\express-handlebars.js:368:47
+      1    0.0%    0.1%  LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-handlebars\dist\express-handlebars.js:107:67
+      1    0.0%    0.1%  LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\dateformat\lib\dateformat.js:1:696
+      1    0.0%    0.1%  LazyCompile: *<anonymous> :1:20
+      1    0.0%    0.1%  Function: ^validateNumber node:internal/validators:123:24
+      1    0.0%    0.1%  Function: ^shouldSave D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-session\index.js:440:24
+      1    0.0%    0.1%  Function: ^set D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\application.js:359:23
+      1    0.0%    0.1%  Function: ^selectServer D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\sdam\topology.js:254:17
+      1    0.0%    0.1%  Function: ^render D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\application.js:548:29
+      1    0.0%    0.1%  Function: ^prog D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\runtime.js:260:16
+      1    0.0%    0.1%  Function: ^processPromiseRejections node:internal/process/promises:211:34
+      1    0.0%    0.1%  Function: ^preferredEncodings D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\negotiator\lib\encoding.js:138:28
+      1    0.0%    0.1%  Function: ^pipe D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\send\index.js:506:43
+      1    0.0%    0.1%  Function: ^noop node:internal/util/debuglog:47:14
+      1    0.0%    0.1%  Function: ^merge D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\qs\lib\utils.js:47:27
+      1    0.0%    0.1%  Function: ^lex D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:525:30
+      1    0.0%    0.1%  Function: ^lambda D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\runtime.js:141:28
+      1    0.0%    0.1%  Function: ^l D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\dateformat\lib\dateformat.js:1:2705
+      1    0.0%    0.1%  Function: ^join node:path:421:7
+      1    0.0%    0.1%  Function: ^isFunction D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\utils.js:46:37
+      1    0.0%    0.1%  Function: ^getEncodingOps node:buffer:679:24
+      1    0.0%    0.1%  Function: ^get session D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\operations\operation.js:44:16
+      1    0.0%    0.1%  Function: ^get readConcern D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\collection.js:104:20
+      1    0.0%    0.1%  Function: ^format D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\quick-format-unescaped\index.js:8:16
+      1    0.0%    0.1%  Function: ^exports.sign D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\cookie-signature\index.js:16:24
+      1    0.0%    0.1%  Function: ^emit node:events:475:44
+      1    0.0%    0.1%  Function: ^deserializeObject D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\bson\lib\parser\deserializer.js:65:27
+      1    0.0%    0.1%  Function: ^clearBuffer node:internal/streams/writable:529:21
+      1    0.0%    0.1%  Function: ^arrayClone node:events:879:20
+      1    0.0%    0.1%  Function: ^addListeners D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\compression\index.js:229:23
+      1    0.0%    0.1%  Function: ^addCatch node:events:348:18
+      1    0.0%    0.1%  Function: ^SourceNode_toString D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\source-map\lib\source-node.js:318:61
+      1    0.0%    0.1%  Function: ^SonicBoom.write D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\sonic-boom\index.js:237:38
+      1    0.0%    0.1%  Function: ^Readable.on node:internal/streams/readable:874:33
+      1    0.0%    0.1%  Function: ^Object.entries.reduce.plain D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\pino-pretty\lib\utils.js:385:58
+      1    0.0%    0.1%  Function: ^<anonymous> file:///D:/Courses/Backend%20Coderhouse/Clase%2030%20-%20PROXY%20_%20NGINX/Servidor-con-balance-de-carga/routes/mainRouter.js:47:25
+      1    0.0%    0.1%  Function: ^<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\qs\lib\utils.js:92:48
+      1    0.0%    0.1%  Function: ^<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\sdam\monitor.js:304:58
+      1    0.0%    0.1%  Function: ^<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cursor\find_cursor.js:54:79
+      1    0.0%    0.1%  Function: ^<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\connection_pool.js:293:27
+      1    0.0%    0.1%  Function: ^<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-session\index.js:598:43
+      1    0.0%    0.1%  Function: ^<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-session\index.js:485:38
+
+ [C++]:
+   ticks  total  nonlib   name
+
+ [Summary]:
+   ticks  total  nonlib   name
+    793    3.9%   97.1%  JavaScript
+      0    0.0%    0.0%  C++
+    244    1.2%   29.9%  GC
+  19702   96.0%          Shared libraries
+     24    0.1%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+  15856   77.3%  C:\WINDOWS\SYSTEM32\ntdll.dll
+    771    4.9%    LazyCompile: *Socket._writeGeneric node:net:791:42
+    673   87.3%      LazyCompile: *Socket._write node:net:828:35
+    673  100.0%        LazyCompile: *_write node:internal/streams/writable:283:16
+    334   49.6%          LazyCompile: *value node:internal/console/constructor:258:20
+    334  100.0%            Function: ^log node:internal/console/constructor:359:6
+    247   36.7%          LazyCompile: *Writable.write node:internal/streams/writable:333:36
+    247  100.0%            Function: ^value node:internal/console/constructor:258:20
+     92   13.7%          LazyCompile: *ondata node:internal/streams/readable:752:18
+     92  100.0%            LazyCompile: *readableAddChunk node:internal/streams/readable:236:26
+     98   12.7%      Function: ^Socket._write node:net:828:35
+     98  100.0%        LazyCompile: *_write node:internal/streams/writable:283:16
+     85   86.7%          LazyCompile: *Writable.write node:internal/streams/writable:333:36
+     85  100.0%            Function: ^value node:internal/console/constructor:258:20
+     13   13.3%          LazyCompile: *ondata node:internal/streams/readable:752:18
+     13  100.0%            LazyCompile: *readableAddChunk node:internal/streams/readable:236:26
+    384    2.4%    LazyCompile: *<anonymous> file:///D:/Courses/Backend%20Coderhouse/Clase%2030%20-%20PROXY%20_%20NGINX/Servidor-con-balance-de-carga/routes/mainRouter.js:47:25
+    253   65.9%      LazyCompile: *dispatch D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\route.js:98:45
+    253  100.0%        LazyCompile: *handle D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\layer.js:86:49
+    253  100.0%          LazyCompile: *next D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\index.js:177:16
+    253  100.0%            LazyCompile: *handle D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\index.js:136:31
+    131   34.1%      LazyCompile: *handle D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\layer.js:86:49
+    131  100.0%        Function: ^next D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\route.js:116:16
+    131  100.0%          Function: ^dispatch D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\route.js:98:45
+    131  100.0%            LazyCompile: *handle D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\layer.js:86:49
+    205    1.3%    LazyCompile: *ondata D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\pino-pretty\node_modules\readable-stream\lib\internal\streams\readable.js:697:18
+    178   86.8%      LazyCompile: *readableAddChunk D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\pino-pretty\node_modules\readable-stream\lib\internal\streams\readable.js:216:26
+    178  100.0%        LazyCompile: *ondata node:internal/streams/readable:752:18
+    178  100.0%          LazyCompile: *readableAddChunk node:internal/streams/readable:236:26
+    140   78.7%            LazyCompile: *Transform._write node:internal/streams/transform:178:38
+     38   21.3%            LazyCompile: *transform D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\split2\index.js:24:20
+     27   13.2%      LazyCompile: *emit node:events:475:44
+     27  100.0%        Function: ^addChunk D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\pino-pretty\node_modules\readable-stream\lib\internal\streams\readable.js:280:18
+     27  100.0%          Function: ^readableAddChunk D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\pino-pretty\node_modules\readable-stream\lib\internal\streams\readable.js:216:26
+     27  100.0%            LazyCompile: *ondata node:internal/streams/readable:752:18
+
+   3807   18.6%  D:\Programs\nodejs\node.exe
+   2025   53.2%    D:\Programs\nodejs\node.exe
+    144    7.1%      D:\Programs\nodejs\node.exe
+     16   11.1%        LazyCompile: *syncExports node:internal/bootstrap/loaders:287:14
+     15   93.8%          Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+     15  100.0%            Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      1    6.3%          Function: ^<anonymous> node:internal/bootstrap/loaders:273:15
+      1  100.0%            D:\Programs\nodejs\node.exe
+     13    9.0%        LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\dateformat\lib\dateformat.js:1:696
+      9   69.2%          Function: ^formatTime D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\pino-pretty\lib\utils.js:67:21
+      9  100.0%            LazyCompile: *pretty D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\pino-pretty\index.js:119:19
+      4   30.8%          LazyCompile: *formatTime D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\pino-pretty\lib\utils.js:67:21
+      4  100.0%            LazyCompile: *pretty D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\pino-pretty\index.js:119:19
+      9    6.3%        LazyCompile: *quotedString D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\code-gen.js:118:38
+      5   55.6%          LazyCompile: *compile D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      2   40.0%            LazyCompile: *invokePartial D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\runtime.js:298:23
+      2   40.0%            LazyCompile: *compile D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      1   20.0%            LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-handlebars\dist\express-handlebars.js:227:47
+      4   44.4%          LazyCompile: *setupHelper D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:1020:36
+      3   75.0%            LazyCompile: *invokeAmbiguous D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:699:44
+      1   25.0%            Function: ^invokeKnownHelper D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:682:48
+      9    6.3%        LazyCompile: *invokePartialWrapper D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\runtime.js:70:32
+      9  100.0%          Function: ^<anonymous> :1:20
+      9  100.0%            LazyCompile: *ret D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\runtime.js:188:15
+      6    4.2%        LazyCompile: *onMessage D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\connection.js:156:14
+      5   83.3%          Function: ^<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\connection.js:60:44
+      5  100.0%            LazyCompile: *processIncomingData D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\message_stream.js:84:29
+      1   16.7%          LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\connection.js:60:44
+      1  100.0%            LazyCompile: *processIncomingData D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\message_stream.js:84:29
+      5    3.5%        LazyCompile: *endSession D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\sessions.js:129:15
+      2   40.0%          LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\operations\update.js:76:40
+      2  100.0%            LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\sdam\server.js:210:101
+      1   20.0%          LazyCompile: *cleanupCursor D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cursor\abstract_cursor.js:536:23
+      1  100.0%            LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cursor\abstract_cursor.js:428:42
+      1   20.0%          LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\operations\execute_operation.js:69:70
+      1  100.0%            Function: ^<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\operations\update.js:76:40
+      1   20.0%          Function: ^cleanupCursor D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cursor\abstract_cursor.js:536:23
+      1  100.0%            Function: ^<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cursor\abstract_cursor.js:428:42
+      5    3.5%        D:\Programs\nodejs\node.exe
+      2   40.0%          LazyCompile: *isValid D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\read_preference.js:133:19
+      2  100.0%            LazyCompile: *selectServer D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\sdam\topology.js:254:17
+      2   40.0%          LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\connect-mongo\build\main\lib\MongoStore.js:236:10
+      2  100.0%            Function: ^set D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\connect-mongo\build\main\lib\MongoStore.js:234:8
+      1   20.0%          D:\Programs\nodejs\node.exe
+      1  100.0%            LazyCompile: *Glob._processReaddir2 D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\glob\glob.js:375:44
+      4    2.8%        LazyCompile: *header D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\response.js:777:29
+      4  100.0%          LazyCompile: *send D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\response.js:111:25
+      4  100.0%            Function: ^done D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\response.js:1033:27
+      4    2.8%        LazyCompile: *expressInit D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\middleware\init.js:29:30
+      4  100.0%          LazyCompile: *trim_prefix D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\index.js:293:23
+      4  100.0%            LazyCompile: *next D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\index.js:177:16
+      4    2.8%        LazyCompile: *append D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:394:26
+      4  100.0%          LazyCompile: *compile D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      4  100.0%            LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-handlebars\dist\express-handlebars.js:227:47
+      3    2.1%        LazyCompile: *pretty D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\pino-pretty\index.js:119:19
+      3  100.0%          LazyCompile: *ondata node:internal/streams/readable:752:18
+      3  100.0%            LazyCompile: *readableAddChunk node:internal/streams/readable:236:26
+      3    2.1%        LazyCompile: *pipe D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\send\index.js:506:43
+      3  100.0%          LazyCompile: *serveStatic D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\serve-static\index.js:72:31
+      3  100.0%            LazyCompile: *trim_prefix D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\index.js:293:23
+      3    2.1%        LazyCompile: *Msg D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\commands.js:317:16
+      3  100.0%          LazyCompile: *command D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\connection.js:251:12
+      3  100.0%            LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\sdam\server.js:204:42
+      3    2.1%        LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-handlebars\dist\express-handlebars.js:227:47
+      3  100.0%          LazyCompile: *step D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-handlebars\dist\express-handlebars.js:31:18
+      3  100.0%            LazyCompile: *fulfilled D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-handlebars\dist\express-handlebars.js:21:27
+      3    2.1%        Function: ^databaseNamespace D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\utils.js:377:27
+      3  100.0%          Function: ^Msg D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\commands.js:317:16
+      3  100.0%            LazyCompile: *command D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\connection.js:251:12
+      2    1.4%        LazyCompile: *parse D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\minimatch\minimatch.js:413:9
+      1   50.0%          LazyCompile: *setopts D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\glob\common.js:48:18
+      1  100.0%            LazyCompile: *Glob D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\glob\glob.js:117:15
+      1   50.0%          D:\Programs\nodejs\node.exe
+      1  100.0%            Function: ^<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\minimatch\minimatch.js:222:19
+      2    1.4%        LazyCompile: *format D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\content-type\index.js:65:17
+      2  100.0%          LazyCompile: *send D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\response.js:111:25
+      2  100.0%            Function: ^done D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\response.js:1033:27
+      2    1.4%        LazyCompile: *escapeExpression D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\utils.js:77:26
+      2  100.0%          Function: ^<anonymous> :1:20
+      1   50.0%            LazyCompile: *execIteration D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\helpers\each.js:39:27
+      1   50.0%            Function: ^prog D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\runtime.js:260:16
+      2    1.4%        LazyCompile: *appendEscaped D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:416:40
+      2  100.0%          LazyCompile: *compile D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      2  100.0%            LazyCompile: *compile D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      2    1.4%        LazyCompile: *Glob._process D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\glob\glob.js:295:36
+      1   50.0%          LazyCompile: *Glob._processGlobStar2 D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\glob\glob.js:631:45
+      1  100.0%            Function: ^<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\glob\glob.js:625:43
+      1   50.0%          Function: ^Glob D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\glob\glob.js:117:15
+      1  100.0%            Function: ^glob D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\glob\glob.js:62:15
+      2    1.4%        LazyCompile: *<anonymous> :1:20
+      1   50.0%          LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\helpers\each.js:75:19
+      1  100.0%            Function: ^<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\helpers\each.js:15:44
+      1   50.0%          Function: ^prog D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\runtime.js:260:16
+      1  100.0%            LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\helpers\each.js:15:44
+      2    1.4%        Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      2  100.0%          Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      2  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      2    1.4%        Function: ^parseObject D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\qs\lib\parse.js:115:28
+      2  100.0%          Function: ^parseQueryStringKeys D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\qs\lib\parse.js:150:46
+      1   50.0%            LazyCompile: *query D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\middleware\query.js:39:24
+      1   50.0%            Function: ^module.exports D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\qs\lib\parse.js:239:27
+      2    1.4%        Function: ^fromString D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\utils.js:316:22
+      2  100.0%          Function: ^ns D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\utils.js:294:12
+      2  100.0%            Function: ^<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cursor\abstract_cursor.js:428:42
+      2    1.4%        Function: ^escapeExpression D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\utils.js:77:26
+      2  100.0%          Function: ^<anonymous> :1:20
+      2  100.0%            Function: ^prog D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\runtime.js:260:16
+    121    6.0%      Function: ^handleWriteReq node:internal/stream_base_commons:45:24
+    121  100.0%        Function: ^writeGeneric node:internal/stream_base_commons:147:22
+    121  100.0%          Function: ^Socket._writeGeneric node:net:791:42
+    121  100.0%            Function: ^Socket._write node:net:828:35
+     82    4.0%      LazyCompile: *compile D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+     37   45.1%        LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-handlebars\dist\express-handlebars.js:227:47
+     37  100.0%          LazyCompile: *step D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-handlebars\dist\express-handlebars.js:31:18
+     37  100.0%            LazyCompile: *fulfilled D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-handlebars\dist\express-handlebars.js:21:27
+     21   25.6%        LazyCompile: *compile D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+     12   57.1%          LazyCompile: *invokePartial D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\runtime.js:298:23
+     10   83.3%            LazyCompile: *invokePartialWrapper D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\runtime.js:70:32
+      2   16.7%            Function: ^invokePartialWrapper D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\runtime.js:70:32
+      6   28.6%          LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-handlebars\dist\express-handlebars.js:227:47
+      6  100.0%            LazyCompile: *step D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-handlebars\dist\express-handlebars.js:31:18
+      3   14.3%          Function: ^compileInput D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:507:24
+      3  100.0%            Function: ^ret D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:515:15
+     20   24.4%        LazyCompile: *invokePartial D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\runtime.js:298:23
+     16   80.0%          LazyCompile: *invokePartialWrapper D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\runtime.js:70:32
+     16  100.0%            Function: ^<anonymous> :1:20
+      4   20.0%          Function: ^invokePartialWrapper D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\runtime.js:70:32
+      4  100.0%            Function: ^<anonymous> :1:20
+      3    3.7%        Function: ^compileInput D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:507:24
+      3  100.0%          Function: ^ret D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:515:15
+      2   66.7%            Function: ^invokePartial D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\runtime.js:298:23
+      1   33.3%            Function: ^ExpressHandlebars._renderTemplate D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-handlebars\dist\express-handlebars.js:321:60
+      1    1.2%        LazyCompile: *compileInput D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:507:24
+      1  100.0%          Function: ^ret D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:515:15
+      1  100.0%            Function: ^invokePartial D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\runtime.js:298:23
+     76    3.8%      Function: ^compileFunction node:vm:308:25
+     74   97.4%        Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+     70   94.6%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+     67   95.7%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      3    4.3%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      4    5.4%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1059:37
+      4  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      2    2.6%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1017:18
+      2  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1059:37
+      2  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+     64    3.2%      Function: ^writeSync node:fs:862:19
+     64  100.0%        Function: ^actualWrite D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\sonic-boom\index.js:389:22
+     64  100.0%          Function: ^SonicBoom.write D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\sonic-boom\index.js:237:38
+     64  100.0%            Function: ^ondata D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\pino-pretty\node_modules\readable-stream\lib\internal\streams\readable.js:697:18
+     53    2.6%      Function: ^statSync node:fs:1543:18
+     49   92.5%        Function: ^tryStat D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\view.js:174:17
+     49  100.0%          Function: ^resolve D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\view.js:146:42
+     49  100.0%            Function: ^lookup D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\view.js:104:40
+      2    3.8%        Function: ^fileExists node:internal/modules/esm/resolve:288:20
+      2  100.0%          LazyCompile: ~legacyMainResolve node:internal/modules/esm/resolve:304:27
+      1   50.0%            LazyCompile: ~packageResolve node:internal/modules/esm/resolve:897:24
+      1   50.0%            Function: ^packageResolve node:internal/modules/esm/resolve:897:24
+      1    1.9%        LazyCompile: ~fileExists node:internal/modules/esm/resolve:288:20
+      1  100.0%          LazyCompile: ~legacyMainResolve node:internal/modules/esm/resolve:304:27
+      1  100.0%            LazyCompile: ~packageResolve node:internal/modules/esm/resolve:897:24
+      1    1.9%        Function: ^tryStatSync node:internal/modules/esm/resolve:189:3
+      1  100.0%          Function: ^packageResolve node:internal/modules/esm/resolve:897:24
+      1  100.0%            Function: ^moduleResolve node:internal/modules/esm/resolve:988:23
+     39    1.9%      LazyCompile: *initialize D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\passport\lib\middleware\initialize.js:51:29
+     39  100.0%        LazyCompile: *trim_prefix D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\index.js:293:23
+     39  100.0%          LazyCompile: *next D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\index.js:177:16
+     36   92.3%            Function: ^error D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\serve-static\index.js:115:39
+      3    7.7%            LazyCompile: *error D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\serve-static\index.js:115:39
+     33    1.6%      LazyCompile: *next D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:478:32
+     33  100.0%        LazyCompile: *parse D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:269:30
+     23   69.7%          LazyCompile: *parseWithoutProcessing D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\base.js:33:32
+     21   91.3%            LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-handlebars\dist\express-handlebars.js:227:47
+      2    8.7%            Function: ^parse D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\base.js:51:15
+      6   18.2%          LazyCompile: *invokePartial D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\runtime.js:298:23
+      6  100.0%            LazyCompile: *invokePartialWrapper D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\runtime.js:70:32
+      3    9.1%          Function: ^parseWithoutProcessing D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\base.js:33:32
+      3  100.0%            Function: ^parse D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\base.js:51:15
+      1    3.0%          LazyCompile: *compileInput D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:507:24
+      1  100.0%            Function: ^ret D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:515:15
+     32    1.6%      LazyCompile: *<anonymous> file:///D:/Courses/Backend%20Coderhouse/Clase%2030%20-%20PROXY%20_%20NGINX/Servidor-con-balance-de-carga/routes/mainRouter.js:47:25
+     18   56.3%        LazyCompile: *handle D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\layer.js:86:49
+     18  100.0%          Function: ^next D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\route.js:116:16
+     18  100.0%            Function: ^dispatch D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\route.js:98:45
+     14   43.8%        LazyCompile: *dispatch D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\route.js:98:45
+     14  100.0%          LazyCompile: *handle D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\layer.js:86:49
+     14  100.0%            LazyCompile: *next D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\index.js:177:16
+     30    1.5%      LazyCompile: *setupHelper D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:1020:36
+     23   76.7%        LazyCompile: *invokeAmbiguous D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:699:44
+     23  100.0%          LazyCompile: *compile D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+     14   60.9%            LazyCompile: *compile D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      9   39.1%            LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-handlebars\dist\express-handlebars.js:227:47
+      7   23.3%        LazyCompile: *invokeKnownHelper D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:682:48
+      7  100.0%          LazyCompile: *compile D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      4   57.1%            LazyCompile: *invokePartial D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\runtime.js:298:23
+      2   28.6%            LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-handlebars\dist\express-handlebars.js:227:47
+      1   14.3%            LazyCompile: *compileInput D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:507:24
+     27    1.3%      LazyCompile: *hash D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-session\index.js:596:14
+      8   29.6%        Function: ^isSaved D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-session\index.js:430:21
+      8  100.0%          Function: ^shouldSave D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-session\index.js:440:24
+      8  100.0%            LazyCompile: *send D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\response.js:111:25
+      7   25.9%        Function: ^inflate D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-session\index.js:371:22
+      7  100.0%          Function: ^<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-session\index.js:485:38
+      7  100.0%            LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\connect-mongo\build\main\lib\MongoStore.js:203:10
+      5   18.5%        Function: ^save D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-session\index.js:403:20
+      5  100.0%          LazyCompile: *send D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\response.js:111:25
+      5  100.0%            Function: ^done D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\response.js:1033:27
+      4   14.8%        Function: ^isModified D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-session\index.js:425:24
+      4  100.0%          Function: ^shouldSetCookie D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-session\index.js:464:29
+      4  100.0%            Function: ^<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-session\index.js:220:28
+      3   11.1%        LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-session\index.js:485:38
+      3  100.0%          LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\connect-mongo\build\main\lib\MongoStore.js:203:10
+      3  100.0%            D:\Programs\nodejs\node.exe
+     25    1.2%      LazyCompile: *nextTick node:internal/process/task_queues:104:18
+      8   32.0%        LazyCompile: *readableAddChunk D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\pino-pretty\node_modules\readable-stream\lib\internal\streams\readable.js:216:26
+      8  100.0%          LazyCompile: *ondata node:internal/streams/readable:752:18
+      8  100.0%            LazyCompile: *readableAddChunk node:internal/streams/readable:236:26
+      5   20.0%        LazyCompile: *command D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\sdam\server.js:152:12
+      2   40.0%          LazyCompile: *executeCommand D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\operations\command.js:48:19
+      2  100.0%            LazyCompile: *execute D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\operations\update.js:22:12
+      2   40.0%          Function: ^execute D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\operations\find.js:30:12
+      2  100.0%            LazyCompile: *processWaitQueue D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\sdam\topology.js:535:26
+      1   20.0%          LazyCompile: *execute D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\operations\find.js:30:12
+      1  100.0%            LazyCompile: *processWaitQueue D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\sdam\topology.js:535:26
+      4   16.0%        LazyCompile: *readableAddChunk node:internal/streams/readable:236:26
+      2   50.0%          LazyCompile: *onStreamRead node:internal/stream_base_commons:167:22
+      1   25.0%          LazyCompile: *parserOnMessageComplete node:_http_common:147:33
+      1   25.0%          Function: ^Readable.push node:internal/streams/readable:227:35
+      1  100.0%            Function: ^parserOnMessageComplete node:_http_common:147:33
+      3   12.0%        LazyCompile: *Readable.read node:internal/streams/readable:394:35
+      2   66.7%          LazyCompile: *resume_ node:internal/streams/readable:984:17
+      2  100.0%            LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      1   33.3%          Function: ^resume_ node:internal/streams/readable:984:17
+      1  100.0%            LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      1    4.0%        LazyCompile: *write_ node:_http_outgoing:730:16
+      1  100.0%          Function: ^write node:_http_outgoing:701:49
+      1  100.0%            Function: ^write D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\compression\index.js:78:32
+      1    4.0%        LazyCompile: *_destroy node:_http_incoming:176:55
+      1  100.0%          Function: ^_destroy node:internal/streams/destroy:70:18
+      1  100.0%            Function: ^destroy node:internal/streams/destroy:32:17
+      1    4.0%        Function: ^maybeReadMore D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\pino-pretty\node_modules\readable-stream\lib\internal\streams\readable.js:551:23
+      1  100.0%          Function: ^addChunk D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\pino-pretty\node_modules\readable-stream\lib\internal\streams\readable.js:280:18
+      1  100.0%            Function: ^readableAddChunk D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\pino-pretty\node_modules\readable-stream\lib\internal\streams\readable.js:216:26
+      1    4.0%        Function: ^checkOut D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\connection_pool.js:148:13
+      1  100.0%          Function: ^withConnection D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\connection_pool.js:276:19
+      1  100.0%            Function: ^command D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\sdam\server.js:152:12
+      1    4.0%        Function: ^checkIn D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\connection_pool.js:175:12
+      1  100.0%          Function: ^<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\connection_pool.js:293:27
+      1  100.0%            Function: ^<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\sdam\server.js:210:101
+     25    1.2%      LazyCompile: *endSession D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\sessions.js:129:15
+     10   40.0%        LazyCompile: *cleanupCursor D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cursor\abstract_cursor.js:536:23
+     10  100.0%          LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cursor\abstract_cursor.js:428:42
+     10  100.0%            Function: ^<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cursor\find_cursor.js:54:79
+      7   28.0%        LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\operations\update.js:76:40
+      7  100.0%          LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\sdam\server.js:210:101
+      7  100.0%            Function: ^handleOperationResult D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\sdam\server.js:282:42
+      4   16.0%        LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\operations\execute_operation.js:69:70
+      4  100.0%          Function: ^<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\operations\update.js:76:40
+      4  100.0%            LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\sdam\server.js:210:101
+      4   16.0%        Function: ^<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\operations\execute_operation.js:69:70
+      4  100.0%          Function: ^<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\operations\update.js:76:40
+      2   50.0%            LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\connection_pool.js:293:27
+      2   50.0%            Function: ^<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\connection_pool.js:293:27
+     24    1.2%      LazyCompile: *compression D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\compression\index.js:59:31
+     24  100.0%        LazyCompile: *trim_prefix D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\index.js:293:23
+     24  100.0%          LazyCompile: *next D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\index.js:177:16
+     21   87.5%            LazyCompile: *expressInit D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\middleware\init.js:29:30
+      3   12.5%            Function: ^expressInit D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\middleware\init.js:29:30
+     23    1.1%      LazyCompile: *onwrite node:internal/streams/writable:425:17
+     13   56.5%        LazyCompile: *Socket._writeGeneric node:net:791:42
+     12   92.3%          LazyCompile: *Socket._write node:net:828:35
+     12  100.0%            LazyCompile: *_write node:internal/streams/writable:283:16
+      1    7.7%          Function: ^Socket._write node:net:828:35
+      1  100.0%            LazyCompile: *_write node:internal/streams/writable:283:16
+      4   17.4%        LazyCompile: *writevGeneric node:internal/stream_base_commons:122:23
+      4  100.0%          LazyCompile: *clearBuffer node:internal/streams/writable:529:21
+      2   50.0%            LazyCompile: *end node:_http_outgoing:833:45
+      2   50.0%            LazyCompile: *Writable.uncork node:internal/streams/writable:341:37
+      2    8.7%        LazyCompile: *processIncomingData D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\message_stream.js:84:29
+      2  100.0%          LazyCompile: *_write D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\message_stream.js:31:11
+      2  100.0%            LazyCompile: *_write node:internal/streams/writable:283:16
+      2    8.7%        Function: ^afterWriteDispatched node:internal/stream_base_commons:155:30
+      2  100.0%          Function: ^writeGeneric node:internal/stream_base_commons:147:22
+      2  100.0%            Function: ^Socket._writeGeneric node:net:791:42
+      1    4.3%        LazyCompile: *Transform._write node:internal/streams/transform:178:38
+      1  100.0%          LazyCompile: *_write node:internal/streams/writable:283:16
+      1  100.0%            LazyCompile: *write D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\pino\lib\multistream.js:46:18
+      1    4.3%        Function: ^processIncomingData D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\message_stream.js:84:29
+      1  100.0%          Function: ^_write D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\mongodb\lib\cmap\message_stream.js:31:11
+      1  100.0%            LazyCompile: *_write node:internal/streams/writable:283:16
+     22    1.1%      LazyCompile: *next D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\index.js:177:16
+     12   54.5%        LazyCompile: *handle D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\index.js:136:31
+     12  100.0%          Function: ^router D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\index.js:46:18
+     12  100.0%            LazyCompile: *trim_prefix D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\index.js:293:23
+      4   18.2%        Function: ^error D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\serve-static\index.js:115:39
+      2   50.0%          LazyCompile: *onStatError D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\send\index.js:412:57
+      2  100.0%            Function: ^next D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\send\index.js:728:17
+      2   50.0%          LazyCompile: *emit node:events:475:44
+      2  100.0%            Function: ^error D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\send\index.js:267:45
+      3   13.6%        Function: ^<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-session\index.js:485:38
+      2   66.7%          LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\connect-mongo\build\main\lib\MongoStore.js:203:10
+      2  100.0%            D:\Programs\nodejs\node.exe
+      1   33.3%          Function: ^<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\connect-mongo\build\main\lib\MongoStore.js:203:10
+      1  100.0%            D:\Programs\nodejs\node.exe
+      1    4.5%        LazyCompile: *error D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\serve-static\index.js:115:39
+      1  100.0%          LazyCompile: *onStatError D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\send\index.js:412:57
+      1  100.0%            Function: ^next D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\send\index.js:728:17
+      1    4.5%        Function: ^jsonParser D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\body-parser\lib\types\json.js:98:30
+      1  100.0%          LazyCompile: *trim_prefix D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\index.js:293:23
+      1  100.0%            LazyCompile: *next D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\index.js:177:16
+      1    4.5%        Function: ^initialize D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\passport\lib\middleware\initialize.js:51:29
+      1  100.0%          Function: ^handle D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\layer.js:86:49
+      1  100.0%            Function: ^trim_prefix D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\index.js:293:23
+     21    1.0%      LazyCompile: *quotedString D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\code-gen.js:118:38
+     11   52.4%        LazyCompile: *setupHelper D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:1020:36
+      5   45.5%          LazyCompile: *invokeKnownHelper D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:682:48
+      5  100.0%            LazyCompile: *compile D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      5   45.5%          LazyCompile: *invokeAmbiguous D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:699:44
+      5  100.0%            LazyCompile: *compile D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      1    9.1%          Function: ^invokeKnownHelper D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:682:48
+      1  100.0%            LazyCompile: *compile D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      9   42.9%        LazyCompile: *compile D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      3   33.3%          LazyCompile: *compile D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      1   33.3%            LazyCompile: *invokePartial D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\runtime.js:298:23
+      1   33.3%            LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-handlebars\dist\express-handlebars.js:227:47
+      1   33.3%            Function: ^compileInput D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:507:24
+      3   33.3%          Function: ^compileInput D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:507:24
+      3  100.0%            Function: ^ret D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:515:15
+      2   22.2%          LazyCompile: *invokePartial D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\runtime.js:298:23
+      2  100.0%            LazyCompile: *invokePartialWrapper D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\runtime.js:70:32
+      1   11.1%          LazyCompile: *<anonymous> D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-handlebars\dist\express-handlebars.js:227:47
+      1  100.0%            LazyCompile: *step D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express-handlebars\dist\express-handlebars.js:31:18
+      1    4.8%        Function: ^pushSource D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:881:34
+      1  100.0%          Function: ^append D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:394:26
+      1  100.0%            Function: ^compile D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+     21    1.0%      LazyCompile: *SourceNode_walk D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\source-map\lib\source-node.js:221:53
+     20   95.2%        LazyCompile: *SourceNode_walk D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\source-map\lib\source-node.js:221:53
+     18   90.0%          LazyCompile: *SourceNode_walk D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\source-map\lib\source-node.js:221:53
+     14   77.8%            LazyCompile: *SourceNode_walk D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\source-map\lib\source-node.js:221:53
+      3   16.7%            LazyCompile: *SourceNode_toString D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\source-map\lib\source-node.js:318:61
+      1    5.6%            Function: ^SourceNode_toString D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\source-map\lib\source-node.js:318:61
+      1    5.0%          LazyCompile: *SourceNode_toString D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\source-map\lib\source-node.js:318:61
+      1  100.0%            D:\Programs\nodejs\node.exe
+      1    5.0%          Function: ^SourceNode_toString D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\source-map\lib\source-node.js:318:61
+      1  100.0%            D:\Programs\nodejs\node.exe
+      1    4.8%        Function: ^SourceNode_toString D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\source-map\lib\source-node.js:318:61
+      1  100.0%          D:\Programs\nodejs\node.exe
+      1  100.0%            LazyCompile: *compile D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+     21    1.0%      Function: ^stat node:internal/modules/cjs/loader:151:14
+     11   52.4%        Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+     11  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+     11  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+     10   47.6%        Function: ^tryFile node:internal/modules/cjs/loader:384:17
+     10  100.0%          Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+     10  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+     21    1.0%      Function: ^cpus node:os:133:14
+     20   95.2%        Function: ^<anonymous> file:///D:/Courses/Backend%20Coderhouse/Clase%2030%20-%20PROXY%20_%20NGINX/Servidor-con-balance-de-carga/routes/mainRouter.js:47:25
+     17   85.0%          Function: ^handle D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\layer.js:86:49
+     17  100.0%            Function: ^next D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\route.js:116:16
+      3   15.0%          LazyCompile: *handle D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\layer.js:86:49
+      3  100.0%            Function: ^next D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\route.js:116:16
+      1    4.8%        LazyCompile: ~<anonymous> file:///D:/Courses/Backend%20Coderhouse/Clase%2030%20-%20PROXY%20_%20NGINX/Servidor-con-balance-de-carga/routes/mainRouter.js:47:25
+      1  100.0%          Function: ^handle D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\layer.js:86:49
+      1  100.0%            LazyCompile: ~next D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\route.js:116:16
+     40    1.1%    LazyCompile: *<anonymous> file:///D:/Courses/Backend%20Coderhouse/Clase%2030%20-%20PROXY%20_%20NGINX/Servidor-con-balance-de-carga/routes/mainRouter.js:47:25
+     24   60.0%      LazyCompile: *dispatch D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\route.js:98:45
+     24  100.0%        LazyCompile: *handle D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\layer.js:86:49
+     24  100.0%          LazyCompile: *next D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\index.js:177:16
+     24  100.0%            LazyCompile: *handle D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\index.js:136:31
+     16   40.0%      LazyCompile: *handle D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\layer.js:86:49
+     16  100.0%        Function: ^next D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\route.js:116:16
+     16  100.0%          Function: ^dispatch D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\route.js:98:45
+     16  100.0%            LazyCompile: *handle D:\Courses\Backend Coderhouse\Clase 30 - PROXY _ NGINX\Servidor-con-balance-de-carga\node_modules\express\lib\router\layer.js:86:49
+

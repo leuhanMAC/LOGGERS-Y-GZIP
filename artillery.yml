@@ -1,0 +1,18 @@
+config:
+  target: "http://localhost:8080"
+  phases:
+    - duration: 10
+      arrivalRate: 50
+scenarios:
+  - name: 'Test /info without console'
+    flow: 
+      - loop:
+        - get:
+            url: "/info"
+        count: 20
+  - name: 'Test /info with console'
+    flow: 
+      - loop:
+        - get:
+            url: "/info?console=true"
+        count: 20

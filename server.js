@@ -16,7 +16,7 @@ import { productRouter } from './routes/productRouter.js';
 import { userRouter } from './routes/userRouter.js';
 import { randomRouter } from './routes/randomRouter.js';
 import { mainRouter } from './routes/mainRouter.js';
-import { chat, productFiles, args } from './utils/initData.js';
+import { chat, productFiles, args, logger } from './utils/initData.js';
 
 
 const PORT = args.port;
@@ -74,19 +74,36 @@ app.use("/productos", productRouter);
 app.use("/api/usuario", userRouter);
 app.use("/api/randoms", randomRouter);
 
+//404
+app.use(function (req, res) {
+
+    logger.warn(`404 ${req.url} NOT FOUND`);
+    res.status(404).send('404 Page Not found').end();
+});
+
 //SocketIO
 io.on("connection", async (socket) => {
-
+    logger.info('New connection on socket');
     socket.on("add-product-server", async (data) => {
-        await productFiles.save(data);
-        io.emit("add-product-client", data);
-        console.log('Product added!')
+        try {
+            await productFiles.save(data);
+            io.emit("add-product-client", data);
+            logger.info('New product added.');
+        } catch (error) {
+            logger.error(`ERROR ON SAVE PRODUCT: ${error}`);
+        }
+
     });
 
     socket.on("add-message-server", async (data) => {
-        await chat.save(data);
-        io.emit("add-message-client", data);
-        console.log('Message added!');
+        try {
+            await chat.save(data);
+            io.emit("add-message-client", data);
+            logger.info('New message added.');
+        } catch (error) {
+            logger.error(`ERROR ON SEND MESSAGE: ${error}`);
+        }
+
     })
 });
 
@@ -99,7 +116,7 @@ if (MODE.toLowerCase() === 'cluster') {
 
         }
 
-        cluster.on('exit', (worker, code, signal,) => {
+        cluster.on('exit', (worker) => {
             console.log(`Worker ${worker.process.pid} DIED`);
         })
 

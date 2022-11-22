@@ -1,13 +1,15 @@
 import { Router } from "express";
 import { fork } from 'child_process';
+import { logger } from "../utils/initData.js";
 
 export const randomRouter = Router();
 
 randomRouter.get('/', async (req, res) => {
+    logger.info('GET /api/randoms');
 
     const forkedRandom = fork('../utils/random.js');
     const username = req.session.username || '';
-    logger.info('GET /api/randoms');
+
 
     forkedRandom.on('message', msg => {
 
